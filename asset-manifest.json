@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dashboard/static/css/main.fd7eb75f.css",
+    "main.js": "/dashboard/static/js/main.842a0c4d.js",
+    "static/media/html-css-js4.png": "/dashboard/static/media/html-css-js4.e832be674e72514e3def.png",
+    "static/media/react-webpage2.png": "/dashboard/static/media/react-webpage2.da5e86d1863893e5d7e1.png",
+    "static/media/html-css1.png": "/dashboard/static/media/html-css1.71703434eeaa65b89051.png",
+    "static/media/react-webpage1.png": "/dashboard/static/media/react-webpage1.32d8f37ebcb7d07f8d97.png",
+    "static/media/html-css3.png": "/dashboard/static/media/html-css3.98ee82f1e62bad8b99cc.png",
+    "static/media/html-css2.png": "/dashboard/static/media/html-css2.ec702f2ec3879695259c.png",
+    "static/media/react-e-commerence.png": "/dashboard/static/media/react-e-commerence.fea1c732a154bba27723.png",
+    "static/media/naveen_resume.pdf": "/dashboard/static/media/naveen_resume.0680b79951b010218c88.pdf",
+    "static/media/icon (2).png": "/dashboard/static/media/icon (2).65d1e83954473435d777.png",
+    "static/media/naveen-img.jpeg": "/dashboard/static/media/naveen-img.075aac691664b678a5cb.jpeg",
+    "index.html": "/dashboard/index.html",
+    "main.fd7eb75f.css.map": "/dashboard/static/css/main.fd7eb75f.css.map",
+    "main.842a0c4d.js.map": "/dashboard/static/js/main.842a0c4d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd7eb75f.css",
+    "static/js/main.842a0c4d.js"
+  ]
+}
