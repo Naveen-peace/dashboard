@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(../css/responsive.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fbfdfe;
+}
+
+.lol-container {
+    margin: 0 200px auto;
+
+}
+
+/* navbar */
+.menu-button {
+    display: none;
+}
+
+.nav-background {
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.nav-bar {
+    position: relative;
+}
+
+.nav-bar-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+.nav-bar-two {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-bar-two a {
+    text-decoration: none;
+    font-family: Roboto;
+    color: #171716bc;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    letter-spacing: -0.64px;
+}
+
+.nav-bar-tow-hover:hover {
+    color: #57c9e0;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.8px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1.08);
+    transform-origin: bottom left;
+}
+
+/* _______________ */
+
+/* __________scroolup */
+/* Add this CSS to your existing styles or create a new CSS file */
+
+.scroll-to-top-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #57c9e0;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#scroll-up {
+    display: none;
+}
+
+.scroll-to-top-button:hover {
+    background-color: #0087ca;
+}
+
+/* __________________scroolup */
+
+.nav-bar-tow-hover.active {
+    color: #57c9e0;
+}
+
+.hover-underline-animation.active:after {
+    transform: scaleX(1.08);
+    transform-origin: bottom left;
+    background-color: #57c9e0;
+}
+
+/* ________________ */
+/* navbar */
+/* #697979 */
+/* home */
+.home-head {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 150px;
+}
+
+.naveen-social {
+    display: grid;
+    gap: 15px;
+}
+
+.naveen-social a {
+    text-decoration: none;
+    color: #57c9e0;
+}
+
+/* .naveen-introduce{
+    margin-bottom: 112px;
+} */
+.naveen-introduce h2 {
+    font-family: Playfair;
+    color: #0e0e0bda;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 6500;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-introduce h3 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-introduce h6 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-introduce h5 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-introduce button {
+    padding: 18px 18px;
+    border-radius: 10px;
+    border-color: #57c9e0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #57c9e0;
+}
+
+.naveen-introduce a {
+    text-decoration: none;
+}
+
+.naveen-introduce span {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-introduce button:hover {
+    background-color: #57c9e0;
+    color: #fbfdfe;
+}
+
+/* resume-poup */
+.naveen-resume-button {
+    padding: 18px 18px;
+    border-radius: 10px;
+    border-color: #57c9e0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Roboto;
+    color: #171716bc;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-resume-button:hover {
+    background-color: #57c9e0;
+    color: #fbfdfe;
+}
+
+.naveen-resume-close {
+    padding: 5px 5px;
+    border-radius: 10px;
+    border-color: #57c9e0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #57c9e0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.naveen-resume {
+    display: flex;
+}
+
+.ReactModal__Content {
+    position: relative;
+}
+
+.naveen-resume-newadjust {
+    display: flex;
+    gap: 20px;
+}
+
+.naveen-adjust-resume {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: absolute;
+    inset: 53px 0px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+}
+
+/* resume-poup */
+/* about-page */
+.naveen-about {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 0 0;
+}
+
+.naveen-about h2 {
+    font-family: Roboto;
+    color: #0e0e0bda;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 6500;
+    line-height: normal;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-about h3 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 64px 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-about-1 {
+    display: flex;
+    gap: 40px;
+    margin: 0 180px auto;
+}
+
+.naveen-about-1 h4 {
+    font-family: Roboto;
+    color: #697979;
+    /* text-align: left; */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 65px 0;
+    letter-spacing: 0.64px;
+}
+
+.naveen-qualification {
+    padding: 84px 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.naveen-qualification-1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.naveen-qualification-1 h2 {
+    font-family: Roboto;
+    color: #0e0e0bda;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-qualification-1 h4 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 65px 0;
+    letter-spacing: 0.64px;
+}
+
+.education-work h3 {
+    font-family: Roboto;
+    color: #0e0e0bda;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 6500;
+    line-height: normal;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.64px;
+}
+
+/* about-page */
+/* skills */
+.naveen-skills {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.naveen-skills-1 {
+    border: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
+    padding: 40px 10px 20px;
+
+}
+
+.naveen-skills-sub-1 {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.naveen-skills-1:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
+}
+
+.naveen-skills-sub-1 h4 {
+    font-family: Poppins;
+    color: black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 16px 0;
+    letter-spacing: 0.64px;
+}
+
+.skills {
+    padding: 60px 0 0 0;
+    text-align: center;
+}
+
+.skills h3 {
+    font-family: Roboto;
+    color: #0e0e0bda;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.64px;
+}
+
+.skills h4 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 64px 0;
+    letter-spacing: -0.64px;
+}
+
+/* skills */
+/* project */
+.project-card-1 {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.project-card-2 {
+    padding: 15px;
+}
+
+.project-1 {
+    border: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
+    /* padding: 40px 10px 20px;  */
+    text-align: center;
+}
+
+.project-1:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
+}
+
+.project-2 h2 {
+    font-family: Roboto;
+    color: #0e0e0bda;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    letter-spacing: -0.64px;
+}
+
+.project-2 h4 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    letter-spacing: 0.64px;
+}
+
+.project-livebutton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-livebutton button {
+    background-color: transparent;
+    border-color: #57c9e0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.project-livebutton a {
+    text-decoration: none;
+    display: flex;
+    color: #0f1010;
+    align-items: center;
+    text-align: center;
+}
+
+.project-livebutton button:hover,
+.project-livebutton a:hover {
+    background-color: #57c9e0;
+    color: #fbfdfe;
+}
+
+/* .livebutton :hover {
+    background-color: #57c9e0;
+    color: #fbfdfe !important;
+}
+.project-livebutton a:hover {
+    background-color: #57c9e0;
+    color: #fbfdfe;
+}
+
+.project-livebutton button:hover {
+    background-color: #57c9e0;
+    color: #fbfdfe;
+} */
+.project-card-sub {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.project-card-sub h2 {
+    font-family: Roboto;
+    color: #0e0e0bda;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    letter-spacing: -0.64px;
+}
+
+.project-card-sub h3 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 15px 0;
+    letter-spacing: -0.64px;
+}
+
+/* project */
+/* contact */
+.naveen-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.contact-naveen {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 45px 0;
+}
+
+.contact-naveen h2 {
+    font-family: Roboto;
+    color: #0e0e0bda;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.64px;
+}
+
+.contact-naveen h3 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-contact-1 {
+    display: grid;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.naveen-contact-1 a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #57c9e0;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.naveen-contact-1 h3 {
+    font-family: poppins;
+    color: #0d0e0e;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-contact-1 h4 {
+    font-family: Roboto;
+    color: #697979;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 0 0;
+    letter-spacing: -0.64px;
+}
+
+.naveen-form-main {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.naveen-form {
+    background-color: #eefafc;
+    border: transparent;
+    border-radius: 10px;
+    padding: 12px 16px 4px;
+    display: grid;
+}
+
+.naveen-form label {
+    font-family: Poppins;
+    color: #697979;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.naveen-input {
+    background-color: #eefafc;
+    border: transparent;
+    padding: 4px 8px 8px 0;
+    font-family: Poppins;
+    color: #697979;
+    border-color: #eefafc;
+    width: 100%;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-bottom: 16px;
+}
+
+.naveen-form-1 {
+    background-color: #eefafc;
+    border: transparent;
+    border-radius: 5px;
+    padding: 12px 16px 4px;
+    display: grid;
+}
+
+.naveen-form-1 label {
+    font-family: Poppins;
+    color: #697979;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.naveen-form-2 {
+    background-color: #eefafc;
+    border: transparent;
+    border-radius: 5px;
+    padding: 12px 16px 4px;
+    display: grid;
+}
+
+.naveen-form-2 label {
+    font-family: Poppins;
+    color: #697979;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.naveen-contact-sub {
+    display: grid;
+    gap: 25px;
+}
+
+.naveen-allform h5 {
+    font-family: Poppins;
+    color: #697979;
+    border-color: #eefafc;
+    width: 100%;
+    margin: 0;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-bottom: 16px;
+}
+
+.naveen-allform button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+    background-color: #eefafc;
+    border: transparent;
+    border-radius: 10px;
+    padding: 16px;
+    color: #697979;
+    border-color: #eefafc;
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.naveen-allform button:hover {
+    background-color: #57c9e0;
+    color: #fbfdfe;
+}
+
+.naveen-contact-2 {
+    padding: 0 0 65px 0;
+}
+
+.naveen-download-form {
+    display: flex;
+    gap: 20px;
+}
+
+/* .naveen-resume-button-2{
+
+} */
+/* contact */
+/* home */
+/* footer */
+.footer-naveen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #57c9e0;
+    padding: 20px;
+}
+
+.footer-naveen-1 h2 {
+    font-family: Poppins;
+    color: #eefafc;
+    height: 100%;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+/* footer */
