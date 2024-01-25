@@ -90,7 +90,7 @@ function Header() {
                     <div className="nav-bar">
                         <div className="nav-bar-one">
                             <a href="/dashboard">
-                                <img style={{ width: '50px', height: '50px' }} src={icon} alt="" />
+                                <img style={{ width: '103px', height: '60px' }} src={icon} alt="" />
                             </a>
                             <div className={`nav-bar-two ${showMenu && 'active'}`}>
                                 <Link to={'/dashboard'} onClick={() => handleNavItemClick('/dashboard')} className={`nav-bar-tow-hover hover-underline-animation ${location.pathname === '/dashboard' ? 'active' : ''}`}>Home</Link>

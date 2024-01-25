@@ -30,7 +30,8 @@
     "start": "react-scripts start",
     "perdeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "build": "react-scripts build", 
+    "normalize-line-endings": "node -e \"const fs = require('fs'); const path = require('path'); const processFile = (filePath) => { const content = fs.readFileSync(filePath, 'utf-8'); fs.writeFileSync(filePath, content.replace(/\\r\\n/g, '\\n')); }; const processDirectory = (dirPath) => { const files = fs.readdirSync(dirPath); files.forEach(file => { const filePath = path.join(dirPath, file); const stat = fs.statSync(filePath); if (stat.isDirectory()) { processDirectory(filePath); } else { processFile(filePath); } }); }; processDirectory('src');\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

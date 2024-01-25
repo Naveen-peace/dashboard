@@ -182,9 +182,9 @@
     align-items: center;
   }
 
-  .nav-bar img {
+  /* .nav-bar img {
     margin-bottom: 10px;
-  }
+  } */
 
   .nav-bar-two {
     display: flex;

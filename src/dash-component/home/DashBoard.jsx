@@ -2,7 +2,7 @@ import React from 'react'
 import '../asset/css/style.css'
 import Header from '../components/header/Header'
 import { Icon } from '@iconify/react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Footer from '../components/footer/Footer';
 
 function DashBoard() {
