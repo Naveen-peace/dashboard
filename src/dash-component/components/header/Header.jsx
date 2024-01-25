@@ -7,6 +7,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
     const [showMenu, setShowMenu] = useState(false);
+    const [showScroll, setShowScroll] = useState(false);
     const location = useLocation();
 
     const handleShowNavbar = () => {
@@ -66,6 +67,21 @@ function Header() {
     const handleScrollUp = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+    const handleScroll = () => {
+        if (window.scrollY > 100) {
+            setShowScroll(true);
+        } else {
+            setShowScroll(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <div>
@@ -90,7 +106,7 @@ function Header() {
                     </div>
                 </div>
             </nav>
-            <div id="scroll-up" onClick={handleScrollUp}>
+            <div id="scroll-up" onClick={handleScrollUp} className={showScroll ? 'show-scroll' : ''}>
                 <Icon icon="bi:arrow-up" width="30" height="30" />
             </div>
         </div>
