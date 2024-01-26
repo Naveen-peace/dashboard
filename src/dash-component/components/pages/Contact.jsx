@@ -110,7 +110,7 @@ function Contact() {
                 </div>
                 <h5>*You will get a confirmation mail after sending the message.</h5>
                 <div className='naveen-download-form'>
-                <button type="submit" id="email-submit">Submit Details<Icon icon="iconoir:send" width="30" height="30" /></button>
+                <button type="submit" id="email-submit">Submit Details<Icon icon="iconoir:send" width="20" height="20" /></button>
                 <button className='naveen-resume-button-2' onClick={downloadResume}>
                   <Icon icon="uil:download-alt" width="20" height="20" /> Resume
                 </button>
